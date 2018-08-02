@@ -1,6 +1,8 @@
 @rem RightFax 10.6.3.6 Client Silent Installer /w Prereqs
 @rem for Win7x64
 @rem subst Z: \\Server\Share\InstallFiles /D
+@rem Crystal reports not added in for the Enterprise Fax Reporter
+@rem 
 
  cd .\Client\Prereqs
 
@@ -8,9 +10,12 @@
  "VS2008_vcredist_x86.exe" /q /norestart
  "VS2010_vcredist_x86.exe" /q /norestart
  "VS2012_vcredist_x86.exe" /q /norestart
+ "VS2013_vcredist_x86.exe" /q /norestart
+ "VS2015_vcredist_x86.exe" /q /norestart
  "vstor40_x64.exe" /q /norestart
  "vcredist_x86.exe" /q /norestart
  "vstor_redist.exe" /q /norestart
+ "NDP452-KB2901907-x86-x64-AllOS-ENU.exe" /q /norestart
  cd ..
  cd .\RightFax\Setup
  : PrinterProcessorx64
