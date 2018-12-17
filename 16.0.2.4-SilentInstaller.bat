@@ -1,4 +1,4 @@
-@rem RightFax 16.2.0.1 Client Silent Installer /w Prereqs
+@rem RightFax 16.2.0.4 Client Silent Installer /w Prereqs
 @rem for Windows 7 x64 and higher
 @rem subst Z: \\Server\Share\InstallFiles /D
 
@@ -14,7 +14,7 @@
 @rem Use if Operating system is 32 bit "vcredist_x86.exe" /q /norestart
  "vstor_redist.exe" /q /norestart
  "NDP462-KB3151800-x86-x64-AllOS-ENU.exe" /q /norestart
- "C:\Windows\System32\Rundll32.exe" PRINTUI.EXE /ia /K /m "RightFax PostScript" /h "x64" /v 2 /f c:\drivers\rfps.inf /F c:\Drivers
+ "C:\Windows\System32\Rundll32.exe" PRINTUI.EXE /ia /K /m "RightFax PostScript" /h "x64" /v 2 /f \Drivers\rfps.inf /F \Drivers
  @rem ---Not working---certmgr.exe /add comodorsacertificationauthority.crt
 
  cd ..
