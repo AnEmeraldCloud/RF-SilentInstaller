@@ -2,6 +2,14 @@
 @rem for Windows 7 x64 and higher
 @rem subst Z: \\Server\Share\InstallFiles /D
 
+@After over 50 revisions attempting to use the GUID's for each RightFax client version I eventually gave up for this practice that has proven so far successful. 
+@Copy the previous client install media used on the client workstations to a \OldClient folder off of the root folder.
+
+cd \OldClient
+
+msiexec.exe /x "RightFax Product Suite - Client.msi" RUNBYRIGHTFAXSETUP=2 CONFIGUREFAXCTRL=2 /qb
+
+cd ..
 
  cd .\Prereqs
  "dotNetFx45_Full_x86_x64.exe" /q /norestart
